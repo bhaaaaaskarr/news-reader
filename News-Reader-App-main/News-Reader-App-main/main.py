@@ -14,7 +14,7 @@ if __name__ == '__main__':
     speak("How Many News Do You Want to Hear?")
     a = int(input("How Many Latest News do you want to hear?: "))
 
-    url1 = 'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=fffbb9566eb047a0909f95ad7bc763e3'
+    url1 = 'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=ENTER_YOUR_API_KEY'
 
     news1 = requests.get(url1).text
     news_json = json.loads(news1)
